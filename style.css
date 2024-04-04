@@ -1,0 +1,455 @@
+@font-face {
+    font-family: new;
+    font-weight: 300;
+    src: url(/NeueHaasDisplayMediu.ttf);
+  
+}
+@font-face {
+    font-family: new;
+    font-weight: 100;
+    src: url(/NeueHaasDisplayThin.ttf);
+}
+@font-face {
+    font-family: new;
+    font-weight: 200;
+    src: url(/NeueHaasDisplayXThin.ttf);
+}
+@font-face {
+    font-family: new;
+    font-weight: 500;
+    src: url(/NeueHaasDisplayBlack.ttf);
+}
+@font-face {
+    font-family: new;
+    font-weight: 400;
+    src: url(/NeueHaasDisplayBold.ttf   );
+}
+
+
+* {
+    padding: 0;
+
+    margin: 0;
+}
+
+body {
+    background-color: #EFEAE3;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.part-1 {
+    position: relative;
+    padding: 40px 50px;
+}
+
+.part-1 nav {
+    display: flex;
+    /* padding: 30px ; */
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.nav-bar:hover {
+    color: white;
+}
+
+.nav-bar h4 {
+    padding: 15px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    position: relative;
+    text-transform: capitalize;
+    overflow: hidden;
+    border-radius: 50px;
+    color: white;
+    font-weight: lighter;
+}
+
+.nav-bar h4::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    left: 0px;
+    border-radius: 50%;
+    color: white;
+    bottom: -60px;
+    position: absolute;
+}
+
+.nav-bar h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+h4 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: new;
+    position: relative;
+    z-index: 9;
+/* color: white; */
+    font-weight:300;
+    font-size: 2.5ch;
+}
+
+h4 a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+.center {
+    width: 100%;
+    height: 65vh;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.229);
+}
+
+#left {
+    width: 25vw;
+    font-size: 28px;
+    font-family: new;
+    line-height: 30px;
+}
+
+#right {
+    font-size: 10vw;
+    text-align: right;
+    /* -webkit-background-clip: text;
+    color: transparent; */
+
+    font-family: new;
+    line-height: 8vw;
+}
+
+.part-1 video {
+    margin-top: 80px;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.blur {
+    position: absolute;
+    right: -40px;
+    width: 46vw;
+    height: 36vw;
+    top: 70vh;
+
+}
+
+#blur-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 35, 0);
+    filter: blur(20px);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    animation-name: anime3;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+#blur-2 {
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(255, 52, 0);
+    filter: blur(20px);
+    border-radius: 50%;
+    right: -0px;
+    top: -0px;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+#blur-3 {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: -0px;
+    right: -180px;
+    background-color: rgb(255, 70, 0);
+    filter: blur(25px);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anime {
+    from {
+        transform: translate(20px, -30px);
+
+    }
+
+    to {
+        transform: translate(10px, -0px);
+    }
+
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(20px, -40px);
+
+    }
+
+    to {
+        transform: translate(-10px, 30px);
+    }
+
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(-50px, -40px);
+
+    }
+
+    to {
+        transform: translate(-10px, 30px);
+    }
+
+}
+
+.part-2 {
+    white-space: nowrap;
+    overflow-x: auto;
+
+
+}
+
+.part-2::-webkit-scrollbar {
+    display: none;
+}
+
+.col {
+    padding-top: 5vw;
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.col h1 {
+    font-family: new;
+    font-size: 7vw;
+    font-weight: 300;
+    display: inline-block;
+
+
+}
+
+.gola {
+    width: 3vw;
+    height: 3vw;
+    background-color: orangered;
+    border-radius: 50%;
+    margin: 10px 30px;
+    display: inline-block;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.box{
+    /* background-color: aqua; */
+    width: 100%;
+    transform: translateY(-100px);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 4.5vw;
+    justify-content: space-between;
+    position: relative;
+}
+.box h1{
+    width: 50%;
+    font-family: new;
+    font-size: 4vw;
+    line-height: 3.9vw;
+    font-weight: 300;
+    z-index: 9;
+   color: #000000f5;
+   /* -webkit-text-stroke-color: black;
+   -webkit-text-stroke-width: 4px; */
+    
+
+}
+.card{
+    width: 30%;
+    /* background-color: aquamarine; */
+    font-family: new;
+    font-weight: 100;
+    transform: translateY(200px);
+}
+.card img{
+    padding-bottom: 2.5vw;
+    width: 60%;
+    border-radius: 15px;
+}
+.card p{
+    font-size: 1vw;
+    font-family: new;
+
+    font-weight: 100;
+    word-spacing:3px;
+}
+#golie{   
+     width: 35vw;
+    height: 35vw;
+    background:linear-gradient( #FF6C21,#d60e00 ) ;
+    position: absolute;
+filter: blur(35px);
+border-radius: 50%;
+left: 400px;
+top: 350px;
+animation-name: golie;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+    
+}
+@keyframes golie {
+    form{
+        transform: translate(10%, -10%) skew(0deg);
+    }
+    to{
+        transform: translate(-20%, 20%)  skew(-12deg);
+    }
+}
+h4 
+{
+font-family: new;
+font-weight: 100;
+position: relative;
+display: flex;
+
+left: 30px;
+}
+h4 .goly{
+    margin: 5px 10px;
+width: 10px ;
+height: 10px;
+border-radius: 50%;
+background-color: #ff3022;
+position: relative;
+}
+.bottum-1{
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #FF6C21; */
+
+}
+ .elem{
+    overflow: hidden;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    height: 100px;
+    padding: 1vw 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+.elem h4{
+    padding: 1vw 1vw;
+    font-size: 3vw;
+    font-family: new;
+    font-weight: 300;
+}
+.overlay{
+    width: 100%;
+    top: -160px;
+    height: 100%;
+    position: absolute;
+    background-color: #ff9021;
+    transition:ease .4s ;
+}
+.elem:hover .overlay{
+    top: 0;
+    
+}
+.box-flow{
+    height: 55vh;
+    width: 23vw;
+    position: fixed;
+    top: 30%;
+    border-radius: 30px;
+    display: none;
+    left: 50%;
+    z-index: 90;
+    /* background-color: #ff3022; */
+    background-position: center;
+    background-size: cover;
+
+}
+.main{
+    /* position: relative; */
+    z-index: 30;
+    /* background-color: #000; */
+}
+.hidden{
+    z-index: 29;
+    /* height: 100vh; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* filter: blur(4px); */
+    filter:brightness(20px);
+    background-image: url(/SUNDOWN/photo-1603262110263-fb0112e7cc33.jpeg);
+    
+     /* background-color: #d60e00; */
+}
+.hidden h1{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 5vw;
+    justify-content: flex-end;
+
+}
